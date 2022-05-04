@@ -1,0 +1,7 @@
+{
+    "emmet.excludeLanguages": [
+        "markdown",
+        "\"javascript\": \"javascriptreact\""
+    ],
+    "reactSnippets.settings.prettierEnabled": true
+}
