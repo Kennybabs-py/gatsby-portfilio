@@ -1,3 +1,44 @@
-.logo-name {
+nav {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  .logo-name {
+    text-decoration: none;
+    margin: 0 0 0 10%;
+  }
+
+  ul {
     border: 1px solid black;
+    width: 20%;
+    margin: 0 0 0 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+
+    li {
+      text-decoration: none;
+    }
+  }
+
+  .hamburger {
+    position: absolute;
+    right: 17%;
+    top: 1%;
+    width: 22px;
+    height: 2px;
+    background-color: black;
+
+    &::after {
+      position: absolute;
+      background-color: black;
+      content: "";
+      width: 12px;
+      height: 2px;
+      right: 0;
+      top: 6px;
+    }
+  }
 }
