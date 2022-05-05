@@ -7,10 +7,13 @@ const IndexPage = () => {
     <main>
       <Header pageTitle="Home" />
       <h1>Hello</h1>
-      <StaticImage
-        alt="photo of kenny longing for the future"
-        src="../images/displaypicture.jpg"
-      />
+      <div className="image">
+        <StaticImage
+          alt="photo of kenny longing for the future"
+          src="../images/displaypicture2.jpg"
+          id="display-image"
+        />
+      </div>
     </main>
   );
 };
