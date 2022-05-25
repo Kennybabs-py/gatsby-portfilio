@@ -1,27 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 import "../sass/App.scss";
 
 const Header = ({ pageTitle }) => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleToggle = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <div className="header">
       <title>{pageTitle}</title>
       <nav>
         <Link to="/" className="logo-name">
-          <div>
-            <h3>Kenny</h3>
-          </div>
+          <span>Kenny.dev</span>
         </Link>
-        <ul>
-          <li>
-            <Link to="/"> Home </Link>
-          </li>
-          <li>
-            <Link to="/about"> About</Link>
-          </li>
-        </ul>
-        <div className="hamburger"></div>
+        <div
+          className={showMenu ? "hamburger-open" : "hamburger"}
+          onClick={handleToggle}
+        ></div>
       </nav>
+      <div className={showMenu ? "menu-open" : "menu"}>
+        <ul>
+          <li>Home</li>
+          <li>Works</li>
+          <li>Contact me</li>
+        </ul>
+      </div>
     </div>
   );
 };

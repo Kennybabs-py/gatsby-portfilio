@@ -1,19 +1,74 @@
-import * as React from "react";
+import React from "react";
 import Header from "../components/header";
+import Footer from "../components/footer";
 import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
   return (
     <main>
       <Header pageTitle="Home" />
-      <h1>Hello</h1>
-      <div className="image">
+      <div className="intro">
         <StaticImage
           alt="photo of kenny longing for the future"
           src="../images/displaypicture2.jpg"
-          id="display-image"
+          className="intro-image"
         />
+
+        <div className="intro-text">
+          <span>WELCOME TO</span>
+          <span>KENNY'S BLOC</span>
+        </div>
       </div>
+      <div className="what-i-do">
+        <header>
+          <h3>Who I am &#38; what I do</h3>
+        </header>
+        <div className="texts">
+          Hi, I am <span>Kehinde Babalola</span> , a{" "}
+          <span>Frontend Developer</span> who employs modern technologies to
+          build responsive websites.
+        </div>
+        <div className="btn-container">
+          <button>Download Resume</button>
+        </div>
+      </div>
+
+      <div className="skills-container">
+        <header>
+          <h3>Skills</h3>
+        </header>
+        <div className="texts">
+          <ul>
+            <li>
+              <span>html5</span>
+            </li>
+            <li>
+              <span>css3</span>
+            </li>
+            <li>
+              <span>scss</span>
+            </li>
+            <li>
+              <span>javascript</span>
+            </li>
+            <li>
+              <span>typescript</span>
+            </li>
+            <li>
+              <span>react-js</span>
+            </li>
+            <li>
+              <span>Next-js</span>
+            </li>
+            <li>
+              <span>gastby-js</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="projects"></div>
+      <Footer />
     </main>
   );
 };

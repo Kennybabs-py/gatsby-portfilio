@@ -1,15 +1,141 @@
 @import "header";
+@import "fonts";
+@import "colors";
+
+$darkTheme: #000000;
+$lightTheme: #ffffff;
+$blueFont: #0000ee;
+$lightBlueFont: #6796ff;
+$lightFont: #ffffff;
+$darkFont: #000000;
 
 * {
   margin: 0;
   padding: 0;
 }
 
-.image {
-  border: 1px solid black;
-  display: grid;
-  place-items: center;
+.dark-mode {
+  background-color: #1a1919;
+  color: #999;
+  height: 100%;
+  transition: background-color 0.25s ease-in-out;
 }
-#display-image {
-  border-radius: 50%;
+
+.light-mode {
+  background-color: #fff;
+  color: #333;
+  height: 100%;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.intro {
+  margin: 100px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  &-image {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+  }
+
+  &-text {
+    margin: 30px 0 0 0;
+    height: 90%;
+    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: black;
+    font-family: "Playfair Display", serif;
+
+    span:nth-of-type(2n) {
+      font-size: 50px;
+    }
+  }
+}
+
+.what-i-do {
+  border-bottom: 1px solid black;
+  margin: 70px 0 0 0;
+  // height: 150px;
+  box-sizing: border-box;
+
+  header {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    box-sizing: border-box;
+    color: black;
+  }
+
+  .texts {
+    padding: 10px;
+    // border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+    width: 50%;
+    margin: auto;
+    box-sizing: border-box;
+    color: black;
+  }
+  .btn-container {
+    width: 30%;
+    height: 50px;
+    margin: 10px auto;
+    display: grid;
+    place-items: center;
+  }
+  button {
+    border: 1px solid black;
+    width: 150px;
+    height: 100%;
+    font-size: 80%;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    background-color: inherit;
+  }
+}
+
+.skills-container {
+  border-bottom: 1px solid black;
+  margin: 70px 0 0 0;
+  box-sizing: border-box;
+
+  header {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    box-sizing: border-box;
+    color: black;
+  }
+
+  .texts {
+    border: 1px solid black;
+    box-sizing: border-box;
+
+    ul {
+      border: 1px solid black;
+      margin: 5px auto;
+      width: 30%;
+      height: 150px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      list-style: inside;
+    }
+  }
 }
