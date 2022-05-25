@@ -15,8 +15,7 @@ const IndexPage = () => {
         />
 
         <div className="intro-text">
-          <span>WELCOME TO</span>
-          <span>KENNY'S BLOC</span>
+          <span>Kehinde Babalola</span>
         </div>
       </div>
       <div className="what-i-do">
@@ -24,9 +23,8 @@ const IndexPage = () => {
           <h3>Who I am &#38; what I do</h3>
         </header>
         <div className="texts">
-          Hi, I am <span>Kehinde Babalola</span> , a{" "}
-          <span>Frontend Developer</span> who employs modern technologies to
-          build responsive websites.
+          Hi, I'm a <span>Frontend Developer</span> who employs modern
+          technologies to build responsive websites.
         </div>
         <div className="btn-container">
           <button>Download Resume</button>

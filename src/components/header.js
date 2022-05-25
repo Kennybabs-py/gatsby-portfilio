@@ -23,9 +23,15 @@ const Header = ({ pageTitle }) => {
       </nav>
       <div className={showMenu ? "menu-open" : "menu"}>
         <ul>
-          <li>Home</li>
-          <li>Works</li>
-          <li>Contact me</li>
+          <Link to="/">
+            <li>Home</li>
+          </Link>
+          <Link to="">
+            <li>Projects</li>
+          </Link>
+          <Link to="">
+            <li>Contact me</li>
+          </Link>
         </ul>
       </div>
     </div>

@@ -1,31 +1,11 @@
 @import "header";
+@import "footer";
 @import "fonts";
 @import "colors";
-
-$darkTheme: #000000;
-$lightTheme: #ffffff;
-$blueFont: #0000ee;
-$lightBlueFont: #6796ff;
-$lightFont: #ffffff;
-$darkFont: #000000;
 
 * {
   margin: 0;
   padding: 0;
-}
-
-.dark-mode {
-  background-color: #1a1919;
-  color: #999;
-  height: 100%;
-  transition: background-color 0.25s ease-in-out;
-}
-
-.light-mode {
-  background-color: #fff;
-  color: #333;
-  height: 100%;
-  transition: background-color 0.25s ease-in-out;
 }
 
 .intro {
@@ -53,7 +33,7 @@ $darkFont: #000000;
     color: black;
     font-family: "Playfair Display", serif;
 
-    span:nth-of-type(2n) {
+    span {
       font-size: 50px;
     }
   }
@@ -101,6 +81,12 @@ $darkFont: #000000;
     color: black;
     text-align: center;
     background-color: inherit;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      transform: scale(0.8);
+    }
   }
 }
 
@@ -120,11 +106,9 @@ $darkFont: #000000;
   }
 
   .texts {
-    border: 1px solid black;
     box-sizing: border-box;
 
     ul {
-      border: 1px solid black;
       margin: 5px auto;
       width: 30%;
       height: 150px;
